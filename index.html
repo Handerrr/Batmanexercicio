@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        .carousel-imagem {
+            width: 800px;
+            height: 800px;
+            
+        }
+
+        .more-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-principal" class="carousel slide carousel-fade pb-4 pt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 rounded carousel-imagem" src="./imagens/imagem1.jpg" alt="Batman o cavaleiro das trevas">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 rounded carousel-imagem" src="./imagens/imagem2.jpg" alt="Batman o cavaleiro das trevas ressurge">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 rounded carousel-imagem" src="./imagens/imagem3.jpg" alt="The Batman">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-principal" class="carousel-control-prev" data-bs-slide="prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-principal" class="carousel-control-next" data-bs-slide="next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators pb-4">
+                <button class="active" type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header fw-bold">
+                        Filmes do Batman
+                    </div>
+                    <img src="./imagens/imagem1.jpg" alt="Batman o cavaleiro das trevas">
+                    <div class="card-body">
+                        <h4 class="card-title">Batman: O Cavaleiro das Trevas</h4>
+                        <p class="card-text fs-5">
+                            Em Ghotam City, o crime e a corrupção dominam as ruas, Batman(Christian Bale) continua sua luta...
+                        </p>
+                        <div class="more-text">
+                            <p>Em Gotham City, o crime e a corrupção dominam as ruas. Batman (Christian Bale) continua sua luta contra o crime, apoiado pelo promotor público Harvey Dent (Aaron Eckhart) e pelo tenente James Gordon (Gary Oldman). Juntos, eles tentam restaurar a ordem na cidade.<br>
+
+                                No entanto, a chegada de um novo vilão, o Coringa (Heath Ledger), ameaça desestabilizar tudo. Com seu jeito caótico e imprevisível, o Coringa busca criar o caos e desafiar Batman, levando-o a questionar sua moralidade e os limites de sua vigilância. À medida que o Coringa manipula a cidade e suas pessoas, Batman deve fazer escolhas difíceis para salvar Gotham, enquanto lida com as consequências de sua própria identidade como vigilante. <br>
+                                
+                                A tensão cresce em uma batalha épica entre o bem e o mal, explorando temas de justiça, sacrifício e o que significa ser um herói. O filme é aclamado pela crítica e é considerado um marco no gênero de super-heróis, especialmente pela performance memorável de Heath Ledger como o Coringa.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary px-5 py-2" onclick="toggleText(event, this)">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4" >
+                <div class="card mb-4">
+                    <div class="card-header fw-bold">
+                           Filmes do Batman
+                    </div>
+                    <img src="./imagens/imagem2.jpg" alt="Batman o cavaleiro das trevas ressurge">
+                    <div class="card-body">
+                        <h4 class="card-title">Batman: O Cavaleiro das trevas Ressurge</h4>
+                        <p class="card-text fs-5">
+                            Oito anos após a morte de Harvey Dent, a cidade de Gotham City está pacificada...
+                        </p>
+                        <div class="more-text">
+                            <p>Oito anos após a morte de Harvey Dent, a cidade de Gotham City está pacificada e não precisa mais do Batman. A situação faz com que Bruce Wayne (Christian Bale) se torne um homem recluso em sua mansão, convivendo apenas com o mordomo Alfred (Michael Caine). Um dia, em meio a uma festa realizada na Mansão Wayne, uma das garçonetes contratadas rouba um colar de grande valor sentimental. Trata-se de Selina Kyle (Anne Hathaway), uma esperta e habilidosa ladra que, apesar de flagrada por Bruce, consegue fugir. Curioso em descobrir quem é ela, Bruce retorna à caverna para usar os computadores que tanto lhe serviram quando vestia o manto do Homem-Morcego. Aos poucos começa a perceber indícios do surgimento de uma nova ameaça a Gotham City, personificada no brutamontes Bane (Tom Hardy). É o suficiente para que volte a ser o Batman, apesar dos problemas físicos decorrentes de suas atividades como super-herói ao longo dos anos.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary px-5 py-2" onclick="toggleText(event, this)">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header fw-bold">
+                        Filmes do Batman
+                    </div>
+                    <img src="./imagens/imagem3.jpg" alt="The Batman">
+                    <div class="card-body">
+                        <h4 class="card-title">The Batman</h4>
+                        <p class="card-text fs-5">
+                            Batman (The Batman, no original) segue o segundo ano de Bruce Wayne (Robert Pattinson) como o herói...
+                        </p>
+                        <div class="more-text">
+                            <p>Batman (The Batman, no original) segue o segundo ano de Bruce Wayne (Robert Pattinson) como o herói de Gotham, causando medo nos corações dos criminosos da sombria cidade. Com apenas alguns aliados de confiança - Alfred Pennyworth (Andy Serkis) e o tenente James Gordon (Jeffrey Wright) - entre a rede corrupta de funcionários e figuras importantes do distrito, o vigilante solitário se estabeleceu como a única personificação da vingança entre seus concidadãos. Durante uma de suas investigações, Bruce acaba envolvendo a si mesmo e Gordon em um jogo de gato e rato, ao investigar uma série de maquinações sádicas em uma trilha de pistas enigmáticas estabelecida pelo vilão Charada. Quando o trabalho acaba o levando a descobrir uma onda de corrupção que envolve o nome de sua família, pondo em risco a própria integridade e as memórias que tinha sobre seu pai, Thomas Wayne, as evidências começam a chegar mais perto de casa, precisando, Batman, forjar novos relacionamentos, para assim desmascarar o culpado e fazer justiça ao abuso de poder e à corrupção que há muito tempo assola Gotham City.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary px-5 py-2" onclick="toggleText(event, this)">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleText(event, button) {
+            event.preventDefault();
+            const moreText = button.closest('.card-body').querySelector('.more-text');
+            if (moreText.style.display === 'block') {
+                moreText.style.display = 'none';
+                button.textContent = 'Leia mais';
+            } else {
+                moreText.style.display = 'block';
+                button.textContent = 'Leia menos';
+            }
+        }
+    </script>
+</body>
+</html>
